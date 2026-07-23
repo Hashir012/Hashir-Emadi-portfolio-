@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hashir Emadi | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#050505;
+color:#fff;
+overflow-x:hidden;
+}
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.45);
+backdrop-filter:blur(15px);
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:800;
+color:#ff1b2d;
+letter-spacing:2px;
+}
+
+nav ul{
+display:flex;
+gap:35px;
+list-style:none;
+}
+
+nav ul a{
+text-decoration:none;
+color:#fff;
+transition:.3s;
+}
+
+nav ul a:hover{
+color:#ff1b2d;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:120px 8%;
+position:relative;
+}
+
+.bg{
+position:absolute;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%);
+font-size:220px;
+font-weight:900;
+color:rgba(255,0,0,.08);
+letter-spacing:10px;
+z-index:-1;
+user-select:none;
+}
+
+.left{
+width:50%;
+}
+
+.left h3{
+font-size:32px;
+font-weight:400;
+}
+
+.left h1{
+font-size:80px;
+font-weight:800;
+margin:10px 0;
+}
+
+.left span{
+color:#ff1b2d;
+}
+
+.left h2{
+color:#ff4a4a;
+margin-bottom:20px;
+}
+
+.left p{
+color:#cfcfcf;
+line-height:1.8;
+margin-bottom:30px;
+max-width:600px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#ff1b2d;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+color:black;
+}
+
+.right img{
+width:430px;
+border-radius:25px;
+box-shadow:0 0 50px rgba(255,0,0,.35);
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+padding:60px 8%;
+}
+
+.box{
+background:#111;
+padding:35px;
+border-radius:18px;
+text-align:center;
+border:1px solid #222;
+}
+
+.box h1{
+font-size:50px;
+color:#ff1b2d;
+}
+
+.box p{
+margin-top:10px;
+color:#aaa;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.left,.right{
+width:100%;
+}
+
+.right img{
+width:320px;
+margin-bottom:30px;
+}
+
+.bg{
+font-size:120px;
+}
+
+nav ul{
+display:none;
+}
+
+.stats{
+grid-template-columns:1fr;
+}
+
+.left h1{
+font-size:55px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">HASHIR</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">Skills</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="bg">PORTFOLIO</div>
+
+<div class="left">
+
+<h3>Hello, I'm</h3>
+
+<h1>Hashir <span>Emadi</span></h1>
+
+<h2>AI & Cloud Computing Professional</h2>
+
+<p>
+I build modern websites, AI-powered applications,
+and cloud solutions with a premium user experience.
+<p>
+  
+</p>
+</p>
+
+<a href="#" class="btn">Hire Me</a>
+
+</div>
+
+<div class="right">
+  <div class="hero-image">
+    <img src="images_/profile.png" alt="Hashir Emadi" class="profile-img">
+</div>
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="box">
+<h1>3+</h1>
+<p>Years Experience</p>
+</div>
+
+<div class="box">
+<h1>40+</h1>
+<p>Projects</p>
+</div>
+
+<div class="box">
+<h1>20+</h1>
+<p>Happy Clients</p>
+</div>
+
+</section>
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2 class="title">About Me</h2>
+
+<p class="about-text">
+I'm <b>Hashir Emadi</b>, an AI & Cloud Computing Professional passionate
+about building modern websites, intelligent applications and premium user
+experiences. I love creating fast, responsive and elegant digital products.
+</p>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section class="projects">
+
+<h2 class="title">Featured Projects</h2>
+
+<div class="project-grid">
+
+<div class="card">
+<img src="images_/project1.jpg">
+<h3>Portfolio Website</h3>
+<p>Premium personal portfolio with modern UI.</p>
+</div>
+
+<div class="card">
+<img src="images_/project2.jpg">
+<h3>AI Assistant</h3>
+<p>Artificial Intelligence chatbot application.</p>
+</div>
+
+<div class="card">
+<img src="images_/project3.jpg">
+<h3>Cloud Dashboard</h3>
+<p>Cloud monitoring dashboard with analytics.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section class="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="skill-box">
+<span>HTML5</span>
+<span>CSS3</span>
+<span>JavaScript</span>
+<span>Python</span>
+<span>Java</span>
+<span>Cloud Computing</span>
+<span>Artificial Intelligence</span>
+<span>GitHub</span>
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section class="education">
+
+<h2 class="title">Education</h2>
+
+<div class="edu">
+
+<h3>B.Tech (Computer Science Engineering)</h3>
+
+<p>Artificial Intelligence & Cloud Computing</p>
+
+<p>2023 - Present</p>
+
+</div>
+
+</section>
+
+<style>
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#ff1b2d;
+}
+
+.about,.projects,.skills,.education{
+padding:80px 8%;
+}
+
+.about-text{
+max-width:850px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+color:#bbb;
+font-size:18px;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:#111;
+border-radius:20px;
+overflow:hidden;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:20px;
+}
+
+.card p{
+padding:0 20px 20px;
+color:#aaa;
+}
+
+.skill-box{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.skill-box span{
+padding:12px 25px;
+background:#111;
+border:1px solid #ff1b2d;
+border-radius:40px;
+}
+
+.edu{
+max-width:700px;
+margin:auto;
+background:#111;
+padding:30px;
+border-radius:20px;
+text-align:center;
+}
+
+</style>
+<!-- WORK PROCESS -->
+
+<section class="process">
+
+<h2 class="title">Work Process</h2>
+
+<div class="process-grid">
+
+<div class="step">
+<i class="fas fa-lightbulb"></i>
+<h3>Planning</h3>
+<p>Understanding the project requirements and goals.</p>
+</div>
+
+<div class="step">
+<i class="fas fa-pencil-ruler"></i>
+<h3>Design</h3>
+<p>Creating modern UI/UX with responsive layouts.</p>
+</div>
+
+<div class="step">
+<i class="fas fa-code"></i>
+<h3>Development</h3>
+<p>Building fast, secure and optimized applications.</p>
+</div>
+
+<div class="step">
+<i class="fas fa-rocket"></i>
+<h3>Launch</h3>
+<p>Testing, deployment and continuous improvements.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+<h2 class="title">Contact Me</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>Hashir Emadi</h2>
+
+<p>AI & Cloud Computing Professional</p>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-github"></i></a>
+
+<a href="https://www.linkedin.com/in/hashir-emadi-9a3641422"><i class="fab fa-linkedin"></i></a>
+
+<a href="https://instagram.com/sayyed___9000" target="_blank">
+  <i class="fab fa-instagram"></i></a>
+
+<a href="https://facebook.com/Sayyed Hashir Emadi "><i class="fab fa-facebook"></i></a>
+
+</div>
+
+<p class="copy">
+© 2026 Hashir Emadi. All Rights Reserved.
+</p>
+
+</footer>
+
+<style>
+
+.process,
+.contact{
+padding:80px 8%;
+}
+
+.process-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.step{
+background:#111;
+padding:35px;
+border-radius:20px;
+text-align:center;
+transition:.4s;
+border:1px solid #222;
+}
+
+.step:hover{
+transform:translateY(-10px);
+border-color:#ff1b2d;
+}
+
+.step i{
+font-size:45px;
+color:#ff1b2d;
+margin-bottom:20px;
+}
+
+.contact form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.contact input,
+.contact textarea{
+padding:18px;
+background:#111;
+border:1px solid #333;
+color:white;
+border-radius:12px;
+outline:none;
+}
+
+.contact button{
+padding:16px;
+border:none;
+background:#ff1b2d;
+color:white;
+font-size:18px;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+}
+
+.contact button:hover{
+background:#ffffff;
+color:#000;
+}
+
+footer{
+background:#090909;
+padding:50px 20px;
+text-align:center;
+}
+
+footer h2{
+color:#ff1b2d;
+margin-bottom:10px;
+}
+
+.social{
+margin:25px 0;
+}
+
+.social a{
+color:white;
+font-size:24px;
+margin:0 15px;
+transition:.3s;
+}
+
+.social a:hover{
+color:#ff1b2d;
+}
+
+.copy{
+color:#888;
+margin-top:20px;
+}
+
+</style>
+
+<script>
+
+const cards=document.querySelectorAll('.card,.step,.box');
+
+window.addEventListener('scroll',()=>{
+
+cards.forEach(card=>{
+
+const top=card.getBoundingClientRect().top;
+
+if(top<window.innerHeight-80){
+
+card.style.opacity="1";
+card.style.transform="translateY(0)";
+
+}
+
+});
+
+});
+
+cards.forEach(card=>{
+
+card.style.opacity="0";
+
+card.style.transform="translateY(60px)";
+
+card.style.transition="0.8s";
+
+});
+
+</script>
+
+</body>
+</html>
